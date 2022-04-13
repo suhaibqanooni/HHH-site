@@ -58,7 +58,7 @@ function SingleProject({
           >
             {name}
           </p>
-          {/* <img src={image ? image : placeholder} alt={name} /> */}
+          <img src={image ? image : placeholder} alt={name} />
           <div className="project--showcaseBtn">
             <a
               href={demo}

@@ -128,14 +128,14 @@
     z-index: 3;
     transform: translateY(50%);
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
-
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 .review--img img{
-    width: 90px;
+    width: 130px;
 }
 
 .review--content{

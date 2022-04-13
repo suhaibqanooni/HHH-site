@@ -56,34 +56,7 @@ function Projects() {
           <div className="projects--header">
             <h1 style={{ color: theme.primary }}>PROFESSIONAL EXPERIENCE</h1>
           </div>
-          {/* <div className="projects--body">
-            <div className="projects--bodyContainer">
-              {projectsData.slice(0, 3).map((project) => (
-                <SingleProject
-                  theme={theme}
-                  key={project.id}
-                  id={project.id}
-                  name={project.projectName}
-                  desc={project.projectDesc}
-                  tags={project.tags}
-                  code={project.code}
-                  demo={project.demo}
-                  image={project.image}
-                />
-              ))}
-            </div>
 
-            {projectsData.length > 3 && (
-              <div className="projects--viewAll">
-                <Link to="/projects">
-                  <button className={classes.viewAllBtn}>
-                    View All
-                    <HiArrowRight className={classes.viewArr} />
-                  </button>
-                </Link>
-              </div>
-            )}
-          </div> */}
           {experienceData.map((data) => (
             <ProjectCard
               key={data.id}
@@ -99,6 +72,15 @@ function Projects() {
               line4={data.line4}
               line5={data.line5}
               line6={data.line6}
+              line7={data.line7}
+              line8={data.line8}
+              line9={data.line9}
+              Accomplishments={data.Accomplishments}
+              acc1={data.acc1}
+              acc2={data.acc2}
+              acc3={data.acc3}
+              acc4={data.acc4}
+              acc5={data.acc5}
             />
           ))}
         </div>

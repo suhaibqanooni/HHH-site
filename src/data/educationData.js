@@ -8,7 +8,7 @@ export const educationData = [
   },
   {
     id: 2,
-    institution: "NTERNSHIP (SUMSUNG & NIA, South Korea)",
+    institution: "INTERNSHIP (SUMSUNG & NIA, South Korea)",
     course: "Information & Data Management",
     startYear: "Feb-2015",
     endYear: "Dec-2015",

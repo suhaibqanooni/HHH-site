@@ -27,8 +27,7 @@ function Education() {
               course={edu.course}
               startYear={edu.startYear}
               endYear={edu.endYear}
-              description="Hello there!!! it will the desc portion Hello there!!! it will the desc portion
-              Hello there!!! it will the desc portion"
+              description=""
             />
           ))}
         </div>

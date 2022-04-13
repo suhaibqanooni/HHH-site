@@ -368,9 +368,14 @@ function Contacts() {
           </div>
         </div>
       </div>
-      <Fade right>
-        <img src={hhhPic} alt="HHH" className="contacts--img" />
-      </Fade>
+      {/* <Fade right>
+        <img
+          src={hhhPic}
+          alt="HHH"
+          className="contacts--img"
+          style={{ width: 600 }}
+        />
+      </Fade> */}
     </div>
   );
 }

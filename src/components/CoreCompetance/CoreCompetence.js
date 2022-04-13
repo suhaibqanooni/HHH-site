@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import Fade from "react-reveal/Fade";
-import "./About.css";
+import "./CoreCompetence.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
-import { aboutData } from "../../data/aboutData";
+import { competenceData } from "../../data/CoreCompetenceData";
 
-function About() {
+function CoreCompetence() {
   const { theme } = useContext(ThemeContext);
   return (
     <div
@@ -28,22 +28,30 @@ function About() {
       </div>
       <div className="about-body">
         <div className="about-description">
-          <h2 style={{ color: theme.primary }}>{aboutData.title}</h2>
-          <p style={{ color: theme.tertiary80 }}>
-            {aboutData.description1}
-            <br />
-            <br />
-            {aboutData.description2}
-          </p>
+          <h2 style={{ color: theme.primary }}>{competenceData.title}</h2>
+          <Fade bottom>
+            <p style={{ color: theme.tertiary80 }}>
+              {competenceData.description}
+            </p>
+          </Fade>
         </div>
-        <Fade right>
-          <div className="about-img">
-            <img src={aboutData.image} alt="" style={{ width: "100%" }} />
-          </div>
-        </Fade>
+      </div>
+      <div className="line-styling1">
+        <div
+          className="style-circle1"
+          style={{ backgroundColor: theme.primary }}
+        ></div>
+        <div
+          className="style-circle1"
+          style={{ backgroundColor: theme.primary }}
+        ></div>
+        <div
+          className="style-line1"
+          style={{ backgroundColor: theme.primary }}
+        ></div>
       </div>
     </div>
   );
 }
 
-export default About;
+export default CoreCompetence;

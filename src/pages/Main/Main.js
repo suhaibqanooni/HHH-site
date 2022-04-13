@@ -16,7 +16,11 @@ import {
   Services,
   Achievement,
 } from "../../components";
+import CoreCompetence from "../../components/CoreCompetance/CoreCompetence";
+import KeyHighlights from "../../components/KeyHighlights/KeyHighlights";
 import { headerData } from "../../data/headerData";
+import { achievementData } from "../../data/achievementData";
+import { certificationData } from "../../data/CertificationsData";
 
 function Main() {
   return (
@@ -28,10 +32,18 @@ function Main() {
       <Navbar />
       <Landing />
       <About />
+      <CoreCompetence />
       <Skills />
+      <KeyHighlights />
       <Education />
       <Projects />
-      <Achievement />
+      <Achievement title="Achievements" data={achievementData} />
+      <Achievement
+        title="CERTIFICATIONS & TRAININGS"
+        data={certificationData}
+      />
+      <Testimonials />
+      <Services />
       <Blog />
       <Contacts />
       <Footer />
