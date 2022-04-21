@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import hhhPic from "../../assets/hhh/111.png";
 import { ThemeContext } from "../../contexts/ThemeContext";
-import ScrollAnimation from "react-animate-on-scroll";
 import Fade from "react-reveal/Fade";
 import "./Education.css";
 import EducationCard from "./EducationCard";

@@ -4,26 +4,25 @@ import CloseIcon from "@material-ui/icons/Close";
 import axios from "axios";
 import isEmail from "validator/lib/isEmail";
 import { makeStyles } from "@material-ui/core/styles";
-import hhhPic from "../../assets/hhh/44.png";
 
 import linkedinIcon from "../../assets/png/SocialIcons/linkedin.png";
 import instagramIcon from "../../assets/png/SocialIcons/instagram.png";
 import twitter from "../../assets/png/SocialIcons/twitter.png";
 import youtube from "../../assets/png/SocialIcons/youtube.png";
 
-import {
-  FaTwitter,
-  FaLinkedinIn,
-  FaGithub,
-  FaYoutube,
-  FaBloggerB,
-  FaRedditAlien,
-  FaStackOverflow,
-  FaCodepen,
-  FaInstagram,
-  FaGitlab,
-  FaMediumM,
-} from "react-icons/fa";
+// import {
+//   FaTwitter,
+//   FaLinkedinIn,
+//   FaGithub,
+//   FaYoutube,
+//   FaBloggerB,
+//   FaRedditAlien,
+//   FaStackOverflow,
+//   FaCodepen,
+//   FaInstagram,
+//   FaGitlab,
+//   FaMediumM,
+// } from "react-icons/fa";
 import { AiOutlineSend, AiOutlineCheckCircle } from "react-icons/ai";
 import { FiPhone, FiAtSign } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -277,7 +276,7 @@ function Contacts() {
 
           <div className="contacts-details">
             <a
-              // href={`mailto:${contactsData.email}`}
+              href={`mailto:${contactsData.email}`}
               className="personal-details"
             >
               <div className={classes.detailsIcon}>
@@ -285,10 +284,7 @@ function Contacts() {
               </div>
               <p style={{ color: theme.tertiary }}>{contactsData.email}</p>
             </a>
-            <a
-              // href={`tel:${contactsData.phone}`}
-              className="personal-details"
-            >
+            <a href={`tel:${contactsData.phone}`} className="personal-details">
               <div className={classes.detailsIcon}>
                 <FiPhone />
               </div>

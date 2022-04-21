@@ -4,8 +4,6 @@ import Fade from "react-reveal/Fade";
 
 import { ThemeContext } from "../../contexts/ThemeContext";
 
-import eduImgWhite from "../../assets/svg/education/eduImgWhite.svg";
-import eduImgBlack from "../../assets/svg/education/eduImgBlack.svg";
 import "./Projects.css";
 
 function ProjectCard({

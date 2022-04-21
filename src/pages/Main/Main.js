@@ -10,7 +10,7 @@ import {
   Testimonials,
   Blog,
   Education,
-  Experience,
+  // Experience,
   Contacts,
   Projects,
   Services,

@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import Fade from "react-reveal/Fade";
 import "./KeyHighlights.css";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { keyHighlights } from "../../data/keyHighlightsData";
